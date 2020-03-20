@@ -112,4 +112,4 @@ async def rank(ctx):
 			
 	
 	
-client.run(TOKEN)
+client.run(os.getenv('TOKEN'))
