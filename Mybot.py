@@ -83,4 +83,4 @@ async def request(ctx):
 	exp=users[f'{user_id}']['experience']
 	await vodka.send(f'{member} request a role he have {exp} exp ')
 
-client.run(TOKEN)
+client.run(os.getenv('TOKEN'))
