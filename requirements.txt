@@ -1,6 +1,5 @@
 discord.py
 
 daytime
-os
 
 asyncio
