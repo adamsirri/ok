@@ -52,7 +52,7 @@ async def update_data(users, user):
 async def add_experience(users, user, exp):
 	
 	time_diff = ((datetime.datetime.utcnow() - epoch).total_seconds() - users[f'{user.id}']['xp_time'])
-	if time_diff >= 30: 
+	if time_diff >= 5: 
    	 users[f'{user.id}']['experience'] += exp
    	 users[f'{user.id}']['xp_time'] = (datetime.datetime.utcnow() - epoch).total_seconds()
 	
